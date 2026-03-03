@@ -17,11 +17,9 @@ Groupes : 3 ou 4 personnes
 
 Contexte projet
 
-Mini application CLI en Node.js :
+Mini application CLI en Node.js : TaskBoard
 
-TaskBoard
-
-Fonctionnalités :
+Fonctionnalités
 	•	Ajouter une tâche
 	•	Lister les tâches
 	•	Marquer une tâche comme terminée
@@ -32,6 +30,7 @@ Fonctionnalités :
 ÉTAPE 1 – Base du projet (à copier/coller)
 
 Un membre crée le repository GitHub :
+
 taskboard-groupe-X
 
 En local :
@@ -70,7 +69,7 @@ const fs = require("fs");
 
 const FILE = "./tasks.json";
 
-funxction readTasks() {
+function readTasks() {
   if (!fs.existsSync(FILE)) {
     return [];
   }
@@ -136,21 +135,6 @@ switch (command) {
 
 ⸻
 
-📄 README.md
-
-# TaskBoard CLI
-
-## Commandes
-
-Ajouter une tâche :
-node index.js add "Ma tâche"
-
-Lister les tâches :
-node index.js list
-
-
-⸻
-
 Commit initial
 
 git add .
@@ -188,7 +172,7 @@ git checkout develop
 git pull
 git checkout -b feature/nom-feature
 
-Features possibles :
+Features possibles
 	•	feature/delete-task
 	•	feature/complete-task
 	•	feature/refactor-utils
@@ -221,7 +205,7 @@ git checkout develop
 git pull
 git merge feature/xxx
 
-Contraintes :
+Contraintes
 	•	Résoudre au moins 1 conflit
 	•	Créer un commit de merge
 	•	Vérifier l’historique avec :
@@ -286,4 +270,6 @@ Livrables obligatoires
 
 ⸻
 
-Objectif pédagogique : comprendre visuellement et concrètement l’impact des stratégies d’intégration sur l’historique Git.
+Objectif pédagogique
+
+Comprendre visuellement et concrètement l’impact des stratégies d’intégration sur l’historique Git.
